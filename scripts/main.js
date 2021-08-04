@@ -41,3 +41,12 @@ $('a.smooth-scroll')
     }
   }
 });
+
+
+// Calc My Age 
+
+const myAge = document.querySelector(".age")
+
+const age = birth => new Intl.DateTimeFormat('en-US', {year: "numeric"}).format() - birth
+
+myAge.textContent = age(1996)
